@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan 31 19:54:35 2023
+# Process ID: 5980
+# Current directory: C:/Users/austi/CPE 233/ALU_IMMED_GEN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4052 C:\Users\austi\CPE 233\ALU_IMMED_GEN\ALU_IMMED_GEN.xpr
+# Log file: C:/Users/austi/CPE 233/ALU_IMMED_GEN/vivado.log
+# Journal file: C:/Users/austi/CPE 233/ALU_IMMED_GEN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source ALU_TB.tcl
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ALU [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+close_sim
+launch_simulation
+source ALU_TB.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property top IMMED_GEN [current_fileset]
+update_compile_order -fileset sources_1
+close_sim

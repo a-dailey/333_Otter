@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sim_1/new/HW2TB.sv,1674262481,systemVerilog,,,,HW2TB,,,,,,,,
+C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/MUX.sv,1674263602,systemVerilog,,C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/PC.sv,,MUX,,,,,,,,
+C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/PC.sv,1674257952,systemVerilog,,C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/top_pc.sv,,PC,,,,,,,,
+C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/top_pc.sv,1674263521,systemVerilog,,C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sim_1/new/HW2TB.sv,,top_pc,,,,,,,,

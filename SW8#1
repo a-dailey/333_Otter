@@ -1,0 +1,23 @@
+li s0, 0x11000000
+la t0, ISR
+csrrw x0, mtvec, t0
+li t0, 8
+csrrw x0, mstatus, t0
+li t0, 1
+li s1, 0
+sw s1, 0x20(s0)
+
+
+
+
+LOOP: 
+bne x0, t0, LOOP
+
+
+ISR:
+lw t1, 0x00(s0)
+lw t2, 0x20(s0)
+xor s1, t2, t1
+sw s1, 0x20(s0)
+mret
+

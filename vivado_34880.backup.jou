@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Feb 26 16:32:25 2023
+# Process ID: 34880
+# Current directory: C:/Users/austi/CPE 233
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30960 C:\Users\austi\CPE 233\OTTERWRAPPER.xpr
+# Log file: C:/Users/austi/CPE 233/vivado.log
+# Journal file: C:/Users/austi/CPE 233\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/austi/CPE 233/OTTERWRAPPER.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/austi/Downloads/SevSeg_SV/SevSegDisp.sv C:/Users/austi/Downloads/SevSeg_SV/CathodeDriver.sv C:/Users/austi/Downloads/SevSeg_SV/BCD.sv}
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/austi/Downloads/Test_All.mem
+launch_simulation
+launch_simulation
+source OTTER_Wrapper.tcl

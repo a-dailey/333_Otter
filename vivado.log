@@ -1,0 +1,2527 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Mar 13 15:13:11 2023
+# Process ID: 9660
+# Current directory: C:/Users/austi/CPE 233
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22092 C:\Users\austi\CPE 233\OTTERWRAPPER.xpr
+# Log file: C:/Users/austi/CPE 233/vivado.log
+# Journal file: C:/Users/austi/CPE 233\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/austi/CPE 233/OTTERWRAPPER.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1232.059 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module otterMCU_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'rst' is not connected on this instance [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:28]
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.top_pc
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.IMMED_GEN
+Compiling module xil_defaultlib.BRANCH_ADDR_GEN
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BRANCH_COND_GEN
+Compiling module xil_defaultlib.CU_DCDR
+Compiling module xil_defaultlib.rf_mux
+Compiling module xil_defaultlib.alu_muxA
+Compiling module xil_defaultlib.alu_muxB
+Compiling module xil_defaultlib.CU_FSM
+Compiling module xil_defaultlib.intrpt_and
+Compiling module xil_defaultlib.CSR
+Compiling module xil_defaultlib.OTTERMCU
+Compiling module xil_defaultlib.otterMCU_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot otterMCU_TB_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/austi/CPE -notrace
+couldn't read file "C:/Users/austi/CPE": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar 13 15:16:15 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/programcontrol/pc_top/pc_cnt was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/cu_fsm/PS was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/programcontrol/clk was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/programcontrol/rst was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/mem/MEM_DOUT1 was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/reg_file/s0 was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/reg_file/s1 was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/reg_file/s2 was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/reg_file/s3 was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/reg_file/a0 was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/reg_file/t0 was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/reg_file/t1 was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/cu_fsm/mret_exec was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/cu_fsm/int_taken was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/cu_fsm/csr_WE was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/cu_fsm/intr was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/csr/mepc was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/csr/mtvec was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/csr/mstatus was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/csr/mie was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/csr/addr was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/csr/wd was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/alu/result was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/alu/srcA was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/alu/srcB was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/csr/rd was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/csr/rst was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/btnl was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/switches was not found in the design.
+WARNING: Simulation object /OTTER_WRAPPER_TB/UUT/CPU/cu_fsm/intr was not found in the design.
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1232.059 ; gain = 0.000
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_addr_gen/Branch_addr_gen.srcs/sources_1/new/BRANCH_ADDR_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_ADDR_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_cond_gen/Branch_cond_gen.srcs/sources_1/new/BRANCH_COND_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_COND_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_DCDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_DCDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/IMMED_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMMED_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/MUX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/OTTERMCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OTTERMCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/intrpt_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intrpt_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/Downloads/otter_memory_v1_07.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/reg_file/reg_file.srcs/sources_1/new/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/rf_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rf_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/top_pc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_pc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module otterMCU_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.top_pc
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.IMMED_GEN
+Compiling module xil_defaultlib.BRANCH_ADDR_GEN
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BRANCH_COND_GEN
+Compiling module xil_defaultlib.CU_DCDR
+Compiling module xil_defaultlib.rf_mux
+Compiling module xil_defaultlib.alu_muxA
+Compiling module xil_defaultlib.alu_muxB
+Compiling module xil_defaultlib.CU_FSM
+Compiling module xil_defaultlib.intrpt_and
+Compiling module xil_defaultlib.CSR
+Compiling module xil_defaultlib.OTTERMCU
+Compiling module xil_defaultlib.otterMCU_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot otterMCU_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1232.059 ; gain = 0.000
+run 78 us
+run 78 us
+run 78 us
+run 78 us
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.059 ; gain = 0.000
+run 78 us
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.059 ; gain = 0.000
+run 78 us
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.059 ; gain = 0.000
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.059 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_addr_gen/Branch_addr_gen.srcs/sources_1/new/BRANCH_ADDR_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_ADDR_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_cond_gen/Branch_cond_gen.srcs/sources_1/new/BRANCH_COND_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_COND_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_DCDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_DCDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/IMMED_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMMED_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/MUX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/OTTERMCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OTTERMCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/intrpt_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intrpt_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/Downloads/otter_memory_v1_07.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/reg_file/reg_file.srcs/sources_1/new/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/rf_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rf_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/top_pc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_pc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module otterMCU_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.top_pc
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.IMMED_GEN
+Compiling module xil_defaultlib.BRANCH_ADDR_GEN
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BRANCH_COND_GEN
+Compiling module xil_defaultlib.CU_DCDR
+Compiling module xil_defaultlib.rf_mux
+Compiling module xil_defaultlib.alu_muxA
+Compiling module xil_defaultlib.alu_muxB
+Compiling module xil_defaultlib.CU_FSM
+Compiling module xil_defaultlib.intrpt_and
+Compiling module xil_defaultlib.CSR
+Compiling module xil_defaultlib.OTTERMCU
+Compiling module xil_defaultlib.otterMCU_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot otterMCU_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1232.059 ; gain = 0.000
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.059 ; gain = 0.000
+run 78 us
+run 78 us
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.059 ; gain = 0.000
+run 78 us
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1232.059 ; gain = 0.000
+run 78 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Mon Mar 13 16:38:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Mon Mar 13 16:39:30 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Mar 13 16:41:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-18:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1232.059 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2406.465 ; gain = 1174.406
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2598.180 ; gain = 82.277
+run 78 us
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2598.180 ; gain = 0.000
+run 78 us
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2598.180 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Mon Mar 13 16:56:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -jobs 10
+[Mon Mar 13 17:21:40 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Mar 13 17:24:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_addr_gen/Branch_addr_gen.srcs/sources_1/new/BRANCH_ADDR_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_ADDR_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_cond_gen/Branch_cond_gen.srcs/sources_1/new/BRANCH_COND_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_COND_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_DCDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_DCDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/IMMED_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMMED_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/MUX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/OTTERMCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OTTERMCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/intrpt_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intrpt_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/Downloads/otter_memory_v1_07.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/reg_file/reg_file.srcs/sources_1/new/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/rf_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rf_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/top_pc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_pc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module otterMCU_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.top_pc
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.IMMED_GEN
+Compiling module xil_defaultlib.BRANCH_ADDR_GEN
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BRANCH_COND_GEN
+Compiling module xil_defaultlib.CU_DCDR
+Compiling module xil_defaultlib.rf_mux
+Compiling module xil_defaultlib.alu_muxA
+Compiling module xil_defaultlib.alu_muxB
+Compiling module xil_defaultlib.CU_FSM
+Compiling module xil_defaultlib.intrpt_and
+Compiling module xil_defaultlib.CSR
+Compiling module xil_defaultlib.OTTERMCU
+Compiling module xil_defaultlib.otterMCU_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot otterMCU_TB_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2698.246 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2698.246 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2698.246 ; gain = 0.000
+run 78 us
+save_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_addr_gen/Branch_addr_gen.srcs/sources_1/new/BRANCH_ADDR_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_ADDR_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_cond_gen/Branch_cond_gen.srcs/sources_1/new/BRANCH_COND_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_COND_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_DCDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_DCDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/IMMED_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMMED_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/MUX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/OTTERMCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OTTERMCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/intrpt_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intrpt_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/Downloads/otter_memory_v1_07.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/reg_file/reg_file.srcs/sources_1/new/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/rf_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rf_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/top_pc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_pc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module otterMCU_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.top_pc
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.IMMED_GEN
+Compiling module xil_defaultlib.BRANCH_ADDR_GEN
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BRANCH_COND_GEN
+Compiling module xil_defaultlib.CU_DCDR
+Compiling module xil_defaultlib.rf_mux
+Compiling module xil_defaultlib.alu_muxA
+Compiling module xil_defaultlib.alu_muxB
+Compiling module xil_defaultlib.CU_FSM
+Compiling module xil_defaultlib.intrpt_and
+Compiling module xil_defaultlib.CSR
+Compiling module xil_defaultlib.OTTERMCU
+Compiling module xil_defaultlib.otterMCU_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot otterMCU_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2700.223 ; gain = 0.121
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2700.223 ; gain = 0.121
+add_files -norecurse {C:/Users/austi/Downloads/OTTER_VGA_80x60/vga_driver_80x60.sv C:/Users/austi/Downloads/OTTER_VGA_80x60/vga_fb_driver_80x60.sv}
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/austi/Downloads/OTTER_VGA_80x60/ram8k_8_80x60.sv
+update_compile_order -fileset sources_1
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+add_files -norecurse {{C:/Users/austi/CPE 233/flappy_bird.mem}}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 18:36:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 18:37:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 18:38:39 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 18:40:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 18:45:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 18:46:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 18:48:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 18:53:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 18:56:24 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 18:59:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 19:01:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 19:08:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 19:10:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+add_files -norecurse {{C:/Users/austi/CPE 233/VGA_TEST.mem}}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 19:16:48 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 19:18:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 19:20:24 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 19:25:59 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 19:27:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 19:29:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 20:21:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 20:24:06 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 20:31:58 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 20:33:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 20:35:40 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 20:40:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 20:42:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 20:43:42 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 20:45:02 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 20:47:13 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 20:54:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 20:56:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 20:58:29 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 21:05:27 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 21:07:00 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 21:09:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 21:12:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 21:14:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 21:17:00 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 21:19:39 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 21:22:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 21:37:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 21:38:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 21:41:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 22:04:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 22:18:00 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 22:20:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Tue Mar 14 22:21:44 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Mar 14 22:24:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Mar 14 22:27:02 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 11:32:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 11:34:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 11:37:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 11:43:44 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 11:46:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 11:47:39 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 11:48:56 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 11:51:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 12:01:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 12:02:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 12:05:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 12:07:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 12:08:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 12:11:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 12:16:39 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 12:17:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 12:20:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 12:23:04 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 12:23:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 12:24:53 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 12:27:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 12:39:25 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 12:41:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 12:45:05 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 12:46:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 12:48:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 12:59:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 13:01:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 13:03:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 13:47:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 13:48:56 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 13:51:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 15:19:08 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 15:21:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 15:23:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 15:35:37 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 15:37:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 15:39:40 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 15:59:09 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 16:00:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 16:04:22 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 16:12:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 16:13:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 16:16:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 16:35:37 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 16:36:23 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 16:37:39 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 16:39:02 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 16:41:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 17:59:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 18:01:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 18:03:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 18:13:38 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 18:14:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 18:17:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 18:21:44 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 18:23:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 18:25:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 18:36:21 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 18:37:53 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 18:40:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/flappy_bird.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/VGA_TEST.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_addr_gen/Branch_addr_gen.srcs/sources_1/new/BRANCH_ADDR_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_ADDR_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_cond_gen/Branch_cond_gen.srcs/sources_1/new/BRANCH_COND_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_COND_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_DCDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_DCDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/IMMED_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMMED_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/MUX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/OTTERMCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OTTERMCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/intrpt_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intrpt_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/Downloads/otter_memory_v1_07.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/reg_file/reg_file.srcs/sources_1/new/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/rf_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rf_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/top_pc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_pc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module otterMCU_TB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.top_pc
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.IMMED_GEN
+Compiling module xil_defaultlib.BRANCH_ADDR_GEN
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BRANCH_COND_GEN
+Compiling module xil_defaultlib.CU_DCDR
+Compiling module xil_defaultlib.rf_mux
+Compiling module xil_defaultlib.alu_muxA
+Compiling module xil_defaultlib.alu_muxB
+Compiling module xil_defaultlib.CU_FSM
+Compiling module xil_defaultlib.intrpt_and
+Compiling module xil_defaultlib.CSR
+Compiling module xil_defaultlib.OTTERMCU
+Compiling module xil_defaultlib.otterMCU_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot otterMCU_TB_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/austi/CPE -notrace
+couldn't read file "C:/Users/austi/CPE": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 15 18:44:53 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2774.973 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 2774.973 ; gain = 0.000
+run 78 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'otterMCU_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/Test_All.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/interrupt_test_hex.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/flappy_bird.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim/VGA_TEST.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj otterMCU_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_addr_gen/Branch_addr_gen.srcs/sources_1/new/BRANCH_ADDR_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_ADDR_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/Branch_cond_gen/Branch_cond_gen.srcs/sources_1/new/BRANCH_COND_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_COND_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/CSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_DCDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_DCDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/CU_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/ALU_IMMED_GEN/ALU_IMMED_GEN.srcs/sources_1/new/IMMED_GEN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMMED_GEN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/MUX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/OTTERMCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OTTERMCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/PC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/alu_muxB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_muxB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sources_1/new/intrpt_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intrpt_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/Downloads/otter_memory_v1_07.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/reg_file/reg_file.srcs/sources_1/new/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/CU_FSM.srcs/sources_1/new/rf_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rf_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/HW2_PC_MUX/HW2_PC_MUX.srcs/sources_1/new/top_pc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_pc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module otterMCU_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+"xelab -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ce0414f547914c71a44f142b22122515 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot otterMCU_TB_behav xil_defaultlib.otterMCU_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/CPE 233/OTTERWRAPPER.srcs/sim_1/new/otterMCU_TB.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.top_pc
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.IMMED_GEN
+Compiling module xil_defaultlib.BRANCH_ADDR_GEN
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BRANCH_COND_GEN
+Compiling module xil_defaultlib.CU_DCDR
+Compiling module xil_defaultlib.rf_mux
+Compiling module xil_defaultlib.alu_muxA
+Compiling module xil_defaultlib.alu_muxB
+Compiling module xil_defaultlib.CU_FSM
+Compiling module xil_defaultlib.intrpt_and
+Compiling module xil_defaultlib.CSR
+Compiling module xil_defaultlib.OTTERMCU
+Compiling module xil_defaultlib.otterMCU_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot otterMCU_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/austi/CPE 233/OTTERWRAPPER.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "otterMCU_TB_behav -key {Behavioral:sim_1:Functional:otterMCU_TB} -tclbatch {otterMCU_TB.tcl} -view {{C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/austi/CPE 233/OTTER_Wrapper_behav.wcfg}
+source otterMCU_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'otterMCU_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2774.973 ; gain = 0.000
+run 78 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 19:16:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 19:18:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 19:20:31 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 19:26:35 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 19:28:37 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 19:45:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 19:55:39 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 19:58:37 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 20:01:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 20:21:37 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 20:22:57 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 20:25:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 3005.582 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1226 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 3017.051 ; gain = 242.078
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 20:29:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 20:32:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 20:33:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 20:35:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 20:37:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 20:40:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 20:41:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 20:44:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 21:01:22 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 21:02:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 21:04:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 21:07:58 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 21:12:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 21:14:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 21:35:08 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 21:36:30 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 21:38:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 21:50:31 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 21:51:57 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 21:54:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 21:58:31 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 22:00:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 22:02:22 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 22:06:13 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 22:14:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 22:16:13 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 22:18:31 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 22:36:19 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 22:37:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 22:40:00 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 22:53:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Mar 15 22:54:44 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Mar 15 22:57:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/austi/CPE 233/OTTERWRAPPER.runs/impl_1/OTTER_Wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A0D5A

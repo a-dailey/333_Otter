@@ -1,0 +1,39 @@
+.global _start
+
+_start:
+    # Initialize registers
+    li t0, 0x11000000   # Switches address
+    li t1, 0x11000020   # LEDs address
+    li t2, 0           # LEDs value
+    li t3, 1           # Toggle bit
+
+    # Enable interrupts
+
+
+    # Main loop
+main:
+    wfi                # Wait for interrupt
+    lw t4, 0(t0)       # Load switches value
+    xor t2, t2, t3     # Toggle LEDs bit
+    and t3, t3, t4     # Check if switch is 1
+    xor t2, t2, t3     # Toggle LEDs bit if switch is 1
+    sw t2, 0(t1)       # Store new LEDs value
+    j main             # Repeat
+
+    # Interrupt handler
+    .align 2
+    .global interrupt_handler
+interrupt_handler:
+    addi sp, sp, -16   # Make room on stack
+    sw ra, 0(sp)       # Save return address
+    csrr t5, mcause    # Read interrupt cause
+    beqz t5, no_irq    # Ignore non-external interrupts
+    lw t4, 0(t0)       # Load switches value
+    xor t2, t2, t3     # Toggle LEDs bit
+    and t3, t3, t4     # Check if switch is 1
+    xor t2, t2, t3     # Toggle LEDs bit if switch is 1
+    sw t2, 0(t1)       # Store new LEDs value
+no_irq:
+    lw ra, 0(sp)       # Restore return address
+    addi sp, sp, 16    # Restore stack pointer
+    mret               # Return from interrupt
