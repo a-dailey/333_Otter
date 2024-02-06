@@ -59,7 +59,7 @@ module OTTER_MCU(input CLK,
 );           
     wire [6:0] opcode;
     wire [31:0] pc, pc_value, next_pc, jalr_pc, branch_pc, jump_pc, int_pc,A,B,
-        I_immed,S_immed,U_immed,aluBin,aluAin,aluResult,rfIn,csr_reg, mem_data;
+        I_immed,S_immed,U_immed,aluBin,aluAin,aluResult,rfIn,csr_reg, mem_data, InstrD;
     
     wire [31:0] IR;
     wire memRead1,memRead2;
@@ -75,10 +75,13 @@ module OTTER_MCU(input CLK,
 //==== Instruction Fetch ===========================================
 
      logic [31:0] if_de_pc;
-     
      always_ff @(posedge CLK) begin
                 if_de_pc <= pc;
      end
+     
+     top_pc programcontrol(.clk(CLK), .rst(RESET), .PC_WRITE(PCWrite), 
+    .select(pcSource), .JALR(jalr), .BRANCH(branch), 
+    .JAL(jal), .MTVEC(mtvec), .MEPC(mepc), .pc_cnt(pc));
      
      assign pcWrite = 1'b1; 	//Hardwired high, assuming now hazards
      assign memRead1 = 1'b1; 	//Fetch new instruction every cycle
@@ -95,6 +98,26 @@ module OTTER_MCU(input CLK,
     logic [31:0] de_ex_rs2;
 
     instr_t de_ex_inst, de_inst;
+    
+    //register stores PCF, PC+4, Instr from mem
+    IF_DEC_reg if_dec_reg (.PCF(if_de_pc), .PCPlus4F(if_De_pc + 4), .IR(IR), .InstrD(InstrD));
+    
+    Memory mem(.MEM_CLK(clk), .MEM_RDEN1(memRDEN1), .MEM_RDEN2(memRDEN2), .MEM_WE2(memWE2), 
+    .MEM_ADDR1(if_de_pc[15:2]), .MEM_ADDR2(alu_result), .MEM_DIN2(rs2), .MEM_SIZE(IR[13:12]),
+    .MEM_SIGN(IR[14]), .IO_IN(IOBUS_IN), .IO_WR(IOBUS_WR), .MEM_DOUT1(IR), 
+    .MEM_DOUT2(DOUT2));
+    
+    CU_DCDR cu_dcdr(.br_eq(br_eq), .br_lt(br_lt), .br_ltu(br_ltu), .funct3(InstrD[14:12]),
+    .opcode(InstrD[6:0]), .int_taken(int_taken), .ir30(InstrD[30]), .rf_wr_sel(rf_wr_sel), 
+    .alu_srcA(alu_srcA), .alu_srcB(alu_srcB), .pcSource(pcSource), .alu_fun(alu_fun));
+    
+     reg_file reg_file(.clk(clk), .rf_adr1(InstrD[19:15]), .rf_adr2(InstrD[24:20]), .rf_we(regWrite), 
+    .rf_wa(InstrD[11:7]), .rf_wd(rf_wd), .rf_rs1(rs1), .rf_rs2(rs2));
+    
+    alu_muxA alu_muxA(.rs1(rs1), .u_type(u_type), .alu_srcA(alu_srcA), .srcA(srcA)); 
+   
+    alu_muxB alu_muxB(.alu_srcB(alu_srcB), .rs2(rs2), .i_type(i_type), .s_type(s_type),
+    .pc(pc), .csr_RD(csr_rd), .srcB(srcB));
     
     opcode_t OPCODE;
     assign OPCODE_t = opcode_t'(opcode);
