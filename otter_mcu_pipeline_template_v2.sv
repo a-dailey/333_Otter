@@ -100,7 +100,8 @@ module OTTER_MCU(input CLK,
     instr_t de_ex_inst, de_inst;
     
     //register stores PCF, PC+4, Instr from mem
-    IF_DEC_reg if_dec_reg (.PCF(if_de_pc), .PCPlus4F(if_De_pc + 4), .IR(IR), .InstrD(InstrD));
+    IF_DEC_reg if_dec_reg (.PCF(if_de_pc), .PCPlus4F(if_De_pc + 4), 
+    .IR(IR), .InstrD(InstrD), .PCD(PCD), .PCPlus4D(PCPlus4D));
     
     Memory mem(.MEM_CLK(clk), .MEM_RDEN1(memRDEN1), .MEM_RDEN2(memRDEN2), .MEM_WE2(memWE2), 
     .MEM_ADDR1(if_de_pc[15:2]), .MEM_ADDR2(alu_result), .MEM_DIN2(rs2), .MEM_SIZE(IR[13:12]),
@@ -110,6 +111,10 @@ module OTTER_MCU(input CLK,
     CU_DCDR cu_dcdr(.br_eq(br_eq), .br_lt(br_lt), .br_ltu(br_ltu), .funct3(InstrD[14:12]),
     .opcode(InstrD[6:0]), .int_taken(int_taken), .ir30(InstrD[30]), .rf_wr_sel(rf_wr_sel), 
     .alu_srcA(alu_srcA), .alu_srcB(alu_srcB), .pcSource(pcSource), .alu_fun(alu_fun));
+    
+     CU_FSM cu_fsm(.rst(rst), .intr(interrupt), .clk(clk), .funct3(InstrD[14:12]), .opcode(InstrD[6:0]), 
+    .PCWrite(PCWrite), .regWrite(regWrite), .memWE2(memWE2), .memRDEN1(memRDEN1), 
+    .memRDEN2(memRDEN2), .reset(reset), .csr_WE(csr_WE), .int_taken(int_taken), .mret_exec(mret_exec));
     
      reg_file reg_file(.clk(clk), .rf_adr1(InstrD[19:15]), .rf_adr2(InstrD[24:20]), .rf_we(regWrite), 
     .rf_wa(InstrD[11:7]), .rf_wd(rf_wd), .rf_rs1(rs1), .rf_rs2(rs2));
@@ -138,13 +143,20 @@ module OTTER_MCU(input CLK,
 	
 //==== Execute ======================================================
      logic [31:0] ex_mem_rs2;
-     logic ex_mem_aluRes = 0;
+     logic [31:0] ex_mem_aluRes;
      instr_t ex_mem_inst;
      logic [31:0] opA_forwarded;
      logic [31:0] opB_forwarded;
      
+     ID_EX_reg id_ex_reg(.CLK(CLK), .rf_waD(InstrD[11:7]), .PCD(PCD), .PCPlus4D(PCPlus4D));
+     
+     BRANCH_ADDR_GEN branch_addr_gen (.pc(pc), .J_TYPE(j_type), .B_TYPE(b_type), .I_TYPE(i_type), 
+    .rs1(rs1), .jalr(jalr), .jal(jal), .branch(branch));
+    
+    BRANCH_COND_GEN branch_cond_gen(.a(rs1), .b(rs2), .br_eq(br_eq), .br_lt(br_lt), .br_ltu(br_ltu));
+     
      // Creates a RISC-V ALU
-    OTTER_ALU ALU (de_ex_inst.alu_fun, de_ex_opA, de_ex_opB, aluResult); // the ALU
+    ALU alu (de_ex_inst.alu_fun, de_ex_opA, de_ex_opB, aluResult); // the ALU
      
 
 

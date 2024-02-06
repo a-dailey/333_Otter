@@ -1,8 +1,10 @@
 module ID_EX_reg(
     input CLK,
-    input logic [4:0] RdD,
+    input logic [4:0] rf_waD,
     input logic [31:0] PCD, PCPlus4D, de_ex_opA, de_ex_opB,
-    output logic [31:0] PCE, PCPlus4E, ex_mem_opA, ex_mem_opA
+    
+    output logic [4:0] rf_waE,
+    output logic [31:0] PCE, PCPlus4E, ex_mem_opA, ex_mem_opB
 
     );
     
