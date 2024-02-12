@@ -20,10 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
  
-module CU_DCDR(
+module CU_DCDR_EXTENDED(
 input logic br_eq, br_lt, br_ltu, int_taken, ir30,
 input logic [2:0] funct3,
 input logic [6:0] opcode,
+output logic regWrite, memWE2, memRDEN2,
 output logic [1:0] rf_wr_sel, alu_srcA,
 output logic [2:0] alu_srcB, pcSource,
 output logic [3:0] alu_fun
@@ -39,6 +40,11 @@ output logic [3:0] alu_fun
         alu_fun = 0;
     case (opcode)
     7'b0110011: begin  //R-type
+        //new control signals
+        regWrite = 1;
+        memRDEN2 = 0;
+        memWE2 = 0;
+        
         pcSource = 3'b000;
         alu_srcA = 2'b00;
         alu_srcB = 3'b000;
@@ -70,6 +76,11 @@ output logic [3:0] alu_fun
        end
               
     7'b0010011: begin //I-type operators
+        //new control signals
+        regWrite = 1;
+        memRDEN2 = 0;
+        memWE2 = 0;
+        
         alu_srcA = 0; 
         alu_srcB = 1;
         rf_wr_sel = 3;
@@ -100,6 +111,11 @@ output logic [3:0] alu_fun
        end
                 
          7'b0000011: begin //load instructions
+            //new control signals
+            regWrite = 1;
+            memRDEN2 = 1;
+            memWE2 = 0;
+        
             rf_wr_sel = 2;
             alu_fun = 4'b0000;
             alu_srcA = 0;
@@ -107,12 +123,22 @@ output logic [3:0] alu_fun
             pcSource = 0;
             end
         7'b0100011: begin //S-type
+            //new control signals
+            regWrite = 0;
+            memRDEN2 = 0;
+            memWE2 = 1;
+            
             pcSource = 0;
             alu_fun = 4'b0000;
             alu_srcA = 0;
             alu_srcB = 2;
             end        
         7'b1100011: begin //B-type
+            //new control signals
+            regWrite = 0;
+            memRDEN2 = 0;
+            memWE2 = 0;
+            
             case(funct3)
                 3'b000: begin
                     if (br_eq == 1) begin
@@ -166,6 +192,11 @@ output logic [3:0] alu_fun
                   endcase  
               end 
            7'b1100111: begin //jalr
+                //new control signals
+                regWrite = 1;
+                memRDEN2 = 0;
+                memWE2 = 0;
+        
                 alu_fun = 4'b0000;
                 alu_srcA = 0;
                 alu_srcB = 1;
@@ -174,12 +205,22 @@ output logic [3:0] alu_fun
                 end
                 
            7'b0110111: begin //lui
+                //new control signals
+                regWrite = 1;
+                memRDEN2 = 0;
+                memWE2 = 0;
+        
                 alu_srcA = 1;
                 alu_fun = 4'b1001;
                 rf_wr_sel = 3;
                 pcSource = 0;
                 end
             7'b0010111: begin //auipc
+                //new control signals
+                regWrite = 1;
+                memRDEN2 = 0;
+                memWE2 = 0;
+                
                 alu_fun = 4'b0000;
                 alu_srcA = 1;
                 alu_srcB = 3;
@@ -187,6 +228,11 @@ output logic [3:0] alu_fun
                 pcSource = 0;
                 end
             7'b1101111: begin //jal
+                //new control signals
+                regWrite = 1;
+                memRDEN2 = 0;
+                memWE2 = 0;
+                
                 alu_fun = 4'b0000;
                 alu_srcA = 0;
                 alu_srcB = 1;
@@ -194,6 +240,11 @@ output logic [3:0] alu_fun
                 rf_wr_sel = 0;
                 end
             7'b1110011: begin //csr
+                //new control signals
+                regWrite = 0;
+                memRDEN2 = 0;
+                memWE2 = 0;
+        
                 case (funct3) 
                 3'b000: pcSource = 5; //mret
                 3'b001: begin //csrrw

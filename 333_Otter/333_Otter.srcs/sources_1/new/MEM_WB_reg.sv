@@ -1,5 +1,5 @@
 module MEM_WB_reg(
-    input CLK,
+    input CLK, RESET,
     
     //input data signals
     input logic [4:0] rf_waM,
@@ -21,17 +21,35 @@ module MEM_WB_reg(
     );
     
     always_ff @(posedge CLK) begin
-        //pc
-        PCW <= PCM;
-        PCPlus4W <= PCPlus4M;
+    
+        if (RESET) begin
+            //pc
+            PCW <= 32'b0;
+            PCPlus4W <= 32'b0;
+            
+            //Reg File
+            rf_waW <= 5'b0;
+            rf_wr_selW <= 2'b0;
+            regWriteW <= 1'b0;
+            
+            //ALU
+            alu_resW <= 32'b0;
         
-        //Reg File
-        rf_waW <= rf_waM;
-        rf_wr_selW <= rf_wr_selM;
-        regWriteW <= regWriteM;
+        end
         
-        //ALU
-        alu_resW <= alu_resM;
+        else begin
+            //pc
+            PCW <= PCM;
+            PCPlus4W <= PCPlus4M;
+            
+            //Reg File
+            rf_waW <= rf_waM;
+            rf_wr_selW <= rf_wr_selM;
+            regWriteW <= regWriteM;
+            
+            //ALU
+            alu_resW <= alu_resM;
+        end
         
 
 
