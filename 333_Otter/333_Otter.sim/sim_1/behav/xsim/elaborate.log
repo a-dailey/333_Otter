@@ -5,10 +5,10 @@ Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'MTVEC' [C:/Users/austi/OneDrive/Documents/GitHub/333_Otter/otter_mcu_pipeline_template_v2.sv:127]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'PCPlus4F' [C:/Users/austi/OneDrive/Documents/GitHub/333_Otter/otter_mcu_pipeline_template_v2.sv:148]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'csr_RD' [C:/Users/austi/OneDrive/Documents/GitHub/333_Otter/otter_mcu_pipeline_template_v2.sv:177]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'csr_RD' [C:/Users/austi/OneDrive/Documents/GitHub/333_Otter/otter_mcu_pipeline_template_v2.sv:261]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'MTVEC' [C:/Users/austi/OneDrive/Documents/GitHub/333_Otter/333_Otter/333_Otter.srcs/sources_1/new/otter_mcu_pipeline_template_v2.sv:127]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'PCPlus4F' [C:/Users/austi/OneDrive/Documents/GitHub/333_Otter/333_Otter/333_Otter.srcs/sources_1/new/otter_mcu_pipeline_template_v2.sv:148]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'csr_RD' [C:/Users/austi/OneDrive/Documents/GitHub/333_Otter/333_Otter/333_Otter.srcs/sources_1/new/otter_mcu_pipeline_template_v2.sv:177]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'csr_RD' [C:/Users/austi/OneDrive/Documents/GitHub/333_Otter/333_Otter/333_Otter.srcs/sources_1/new/otter_mcu_pipeline_template_v2.sv:261]
 WARNING: [VRFC 10-3823] variable 'IOBUS_WR' might have multiple concurrent drivers [C:/Users/austi/OneDrive/Documents/GitHub/333_Otter/333_Otter/333_Otter.srcs/sim_1/new/pipeline_tb.sv:39]
 Completed static elaboration
 Starting simulation data flow analysis

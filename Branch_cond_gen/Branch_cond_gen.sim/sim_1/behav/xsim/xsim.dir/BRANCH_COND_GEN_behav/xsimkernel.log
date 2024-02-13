@@ -1,7 +1,0 @@
-Running: xsim.dir/BRANCH_COND_GEN_behav/xsimk.exe -simmode gui -wdb BRANCH_COND_GEN_behav.wdb -simrunnum 0 -socket 57947
-Design successfully loaded
-Design Loading Memory Usage: 6584 KB (Peak: 6584 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 7236 KB (Peak: 7236 KB)
-Simulation CPU Usage: 30 ms

@@ -1,1 +1,0 @@
--wto "ce0414f547914c71a44f142b22122515" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "OTTER_Wrapper_behav" "xil_defaultlib.OTTER_Wrapper" "xil_defaultlib.glbl" -log "elaborate.log" 

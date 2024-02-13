@@ -19,8 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
- 
-module CU_DCDR_EXTENDED(
+ module CU_DCDR_EXTENDED(
 input logic br_eq, br_lt, br_ltu, int_taken, ir30,
 input logic [2:0] funct3,
 input logic [6:0] opcode,
