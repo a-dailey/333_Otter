@@ -1,5 +1,5 @@
 module EX_MEM_reg(
-    input CLK,
+    input CLK, RESET,
     
     //input data signals
     input logic [4:0] rf_waE,
@@ -21,24 +21,45 @@ module EX_MEM_reg(
     );
     
     always_ff @(posedge CLK) begin
-        //pc
-        PCM <= PCE;
-        PCPlus4M <= PCPlus4E;
-        
-        //Reg File
-        rf_waM <= rf_waE;
-        rs1M <= rs1E;
-        rs2M <= rs2E;
-        rf_wr_selM <= rf_wr_selE;
-        regWriteM <= regWriteE;
-        
-        //ALU
-        alu_resM <= alu_resE;
-        
-        //memory
-        memWE2M <= memWE2E;
-        InstrM <= InstrE;
-
+         if (RESET) begin
+            //pc
+            PCM <= 32'b0;
+            PCPlus4M <= 32'b0;
+            
+            //Reg File
+            rf_waM <= 5'b0;
+            rs1M <= 32'b0;
+            rs2M <= 32'b0;
+            rf_wr_selM <= 2'b0;
+            regWriteM <= 1'b0 ;
+            
+            //ALU
+            alu_resM <= 32'b0;
+            
+            //memory
+            memWE2M <= 1'b0;
+            InstrM <= 32'b0;      
+            
+            end
+            else begin
+                //pc
+                PCM <= PCE;
+                PCPlus4M <= PCPlus4E;
+                
+                //Reg File
+                rf_waM <= rf_waE;
+                rs1M <= rs1E;
+                rs2M <= rs2E;
+                rf_wr_selM <= rf_wr_selE;
+                regWriteM <= regWriteE;
+                
+                //ALU
+                alu_resM <= alu_resE;
+                
+                //memory
+                memWE2M <= memWE2E;
+                InstrM <= InstrE;
+            end
         
         
     end

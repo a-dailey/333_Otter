@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="pipeline_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_ALU_sv_1781973176 " />
+            <top_module name="glbl" />
+            <top_module name="pipeline_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,094,995 ps"></ZoomStartTime>
+      <ZoomEndTime time="1,095,027 ps"></ZoomEndTime>
+      <Cursor1Time time="1,095,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="123"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/pipeline_tb/UUT/programcontrol/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/programcontrol/pc_cnt" type="array">
+      <obj_property name="ElementShortName">pc_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/id_ex_reg/PCD" type="array">
+      <obj_property name="ElementShortName">PCD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/id_ex_reg/PCE" type="array">
+      <obj_property name="ElementShortName">PCE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/ex_mem_reg/PCM" type="array">
+      <obj_property name="ElementShortName">PCM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/mem_wb_reg/PCW" type="array">
+      <obj_property name="ElementShortName">PCW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCW[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/mem/MEM_DOUT1" type="array">
+      <obj_property name="ElementShortName">MEM_DOUT1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_DOUT1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/id_ex_reg/InstrD" type="array">
+      <obj_property name="ElementShortName">InstrD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstrD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/id_ex_reg/InstrE" type="array">
+      <obj_property name="ElementShortName">InstrE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstrE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/ex_mem_reg/InstrM" type="array">
+      <obj_property name="ElementShortName">InstrM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstrM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/rf_we" type="logic">
+      <obj_property name="ElementShortName">rf_we</obj_property>
+      <obj_property name="ObjectShortName">rf_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/rf_wa" type="array">
+      <obj_property name="ElementShortName">rf_wa[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_wa[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/rf_wd" type="array">
+      <obj_property name="ElementShortName">rf_wd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_wd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/rf_rs1" type="array">
+      <obj_property name="ElementShortName">rf_rs1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_rs1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/rf_rs2" type="array">
+      <obj_property name="ElementShortName">rf_rs2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_rs2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/a0" type="array">
+      <obj_property name="ElementShortName">a0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/t0" type="array">
+      <obj_property name="ElementShortName">t0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">t0[31:0]</obj_property>
+   </wvobject>
+</wave_config>

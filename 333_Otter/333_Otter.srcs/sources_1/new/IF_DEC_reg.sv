@@ -21,16 +21,24 @@
 
 
 module IF_DEC_reg(
-    input CLK,
+    input CLK, RESET,
     input logic [31:0] IR, PCF, PCPlus4F,
     output logic [31:0] PCD, InstrD, PCPlus4D
 
     );
     
     always_ff @(posedge CLK) begin
-        PCD <= PCF;
-        PCPlus4D <= PCPlus4F;
-        InstrD <= IR;
+    
+        if (RESET) begin
+            PCD <= 32'b0;
+            PCPlus4D <= 32'b0;
+            InstrD <= 32'b0;
+        end
+        else begin
+            PCD <= PCF;
+            PCPlus4D <= PCPlus4F;
+            InstrD <= IR;
+        end
     end
         
 endmodule

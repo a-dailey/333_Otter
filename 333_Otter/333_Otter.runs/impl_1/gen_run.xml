@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1707097178">
-  <File Type="ROUTE-PWR" Name="OTTERMCU_power_routed.rpt"/>
+  <File Type="ROUTE-PWR" Name="OTTER_MCU_power_routed.rpt"/>
   <File Type="PA-TCL" Name="OTTERMCU.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="OTTERMCU_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="OTTER_MCU_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="OTTERMCU_reports.tcl"/>
   <File Type="BITSTR-MSK" Name="OTTERMCU.msk"/>
-  <File Type="ROUTE-CLK" Name="OTTERMCU_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="OTTER_MCU_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="OTTERMCU.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="OTTERMCU_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="OTTER_MCU_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="OTTERMCU.bit"/>
   <File Type="BG-DRC" Name="OTTERMCU.drc"/>
   <File Type="BG-BGN" Name="OTTERMCU.bgn"/>
@@ -16,36 +16,36 @@
   <File Type="BITSTR-NKY" Name="OTTERMCU.nky"/>
   <File Type="BITSTR-BMM" Name="OTTERMCU_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="OTTERMCU.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="OTTERMCU_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="OTTER_MCU_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="OTTERMCU.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="OTTERMCU_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="OTTER_MCU_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="OTTERMCU.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="NPI_FILE" Name="OTTERMCU.npi"/>
-  <File Type="OPT-DRC" Name="OTTERMCU_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="OTTER_MCU_drc_opted.rpt"/>
   <File Type="RBD_FILE" Name="OTTERMCU.rbd"/>
   <File Type="OPT-HWDEF" Name="OTTERMCU.hwdef"/>
-  <File Type="PLACE-IO" Name="OTTERMCU_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="OTTERMCU_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="OTTERMCU_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="OTTERMCU_control_sets_placed.rpt"/>
+  <File Type="PLACE-IO" Name="OTTER_MCU_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="OTTER_MCU_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="OTTER_MCU_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="OTTER_MCU_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="OTTERMCU_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="OTTERMCU_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="OTTERMCU_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="OTTERMCU_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="OTTERMCU_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="OTTERMCU_route_status.pb"/>
+  <File Type="ROUTE-DRC" Name="OTTER_MCU_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="OTTER_MCU_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="OTTER_MCU_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="OTTER_MCU_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="OTTER_MCU_route_status.pb"/>
   <File Type="ROUTE-DCP" Name="OTTERMCU_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="OTTERMCU_routed_error.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="OTTERMCU_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="OTTERMCU_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="OTTER_MCU_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="OTTERMCU_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="OTTERMCU_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="OTTERMCU_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="OTTERMCU_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="OTTERMCU_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="OTTERMCU_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-TIMING-RPX" Name="OTTER_MCU_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="OTTER_MCU_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="OTTER_MCU_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="OTTER_MCU_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="OTTER_MCU_bus_skew_routed.rpx"/>
   <File Type="OPT-DCP" Name="OTTERMCU_opt.dcp"/>
   <File Type="PLACE-DCP" Name="OTTERMCU_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="OTTERMCU_pwropt.dcp"/>
@@ -53,13 +53,13 @@
   <File Type="PHYSOPT-DCP" Name="OTTERMCU_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="OTTERMCU_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="OTTERMCU_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="OTTERMCU_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="OTTERMCU_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="OTTERMCU_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="OTTERMCU_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="OTTERMCU_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-DRC-RPX" Name="OTTERMCU_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="OTTERMCU_methodology_drc_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="OTTER_MCU_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="OTTER_MCU_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="OTTER_MCU_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="OTTER_MCU_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="OTTER_MCU_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="OTTER_MCU_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="OTTER_MCU_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="OTTERMCU.pdi"/>
   <File Type="RCFI_FILE" Name="OTTERMCU.rcfi"/>
   <File Type="CFI_FILE" Name="OTTERMCU.cfi"/>
