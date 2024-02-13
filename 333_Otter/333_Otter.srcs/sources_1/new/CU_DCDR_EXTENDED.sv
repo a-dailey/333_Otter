@@ -32,7 +32,7 @@ output logic [3:0] alu_fun
     always_comb begin
 
     
-    pcSource = 3'b000;
+        pcSource = 3'b000;
         alu_srcA = 2'b00;
         alu_srcB = 3'b000;
         rf_wr_sel = 3;

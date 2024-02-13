@@ -15,6 +15,7 @@ sv xil_defaultlib  \
 "../../../../333_Otter.srcs/sources_1/new/alu_muxB.sv" \
 "../../../../333_Otter.srcs/sources_1/new/otter_mcu_pipeline_template_v2.sv" \
 "../../../../333_Otter.srcs/sources_1/new/otter_memory_v1_07.sv" \
+"../../../../333_Otter.srcs/sources_1/new/pc_src_control.sv" \
 "../../../../333_Otter.srcs/sources_1/new/reg_file.sv" \
 "../../../../333_Otter.srcs/sources_1/new/rf_mux.sv" \
 "../../../../333_Otter.srcs/sources_1/new/top_pc.sv" \

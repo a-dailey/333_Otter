@@ -159,10 +159,10 @@ module OTTER_MCU(input CLK,
     
     CU_DCDR_EXTENDED cu_dcdr_extended(.br_eq(br_eq), .br_lt(br_lt), .br_ltu(br_ltu), .funct3(InstrD[14:12]),
     .opcode(InstrD[6:0]), .int_taken(int_takenD), .ir30(InstrD[30]), .rf_wr_sel(rf_wr_selD), 
-    .alu_srcA(alu_control_A), .alu_srcB(alu_control_B), .pcSource(pcSource), .alu_fun(alu_funD),
+    .alu_srcA(alu_control_A), .alu_srcB(alu_control_B), .alu_fun(alu_funD),
     //added signals from FSM
     .regWrite(regWriteD), .memWE2(memWE2D), .memRDEN2(memRDEN2D)
-    );
+    ); //removed .pcSource(pcSource)
     
 //     CU_FSM cu_fsm(.rst(rst), .intr(interrupt), .clk(CLK), .funct3(InstrD[14:12]), .opcode(InstrD[6:0]), 
 //    .PCWrite(PCWrite), .regWrite(regWriteD), .memWE2(memWE2D), .memRDEN1(memRDEN1), 
@@ -206,10 +206,10 @@ module OTTER_MCU(input CLK,
      ID_EX_reg id_ex_reg(
      .CLK(CLK), 
      //inputs
-     .rf_waD(InstrD[11:7]), .PCD(PCD), .PCPlus4D(PCPlus4D), .alu_srcAD(alu_srcAD), .alu_srcBD(alu_srcBD), .j_typeD(j_typeD), .b_typeD(b_typeD), .i_typeD(i_typeD), .regWriteD(regWriteD), .memRDEN2D(memRDEN2D), .memWE2D(memWE2D), .alu_funD(alu_funD),
+     .rf_waD(InstrD[11:7]), .rf_wr_selD(rf_wr_selD), .PCD(PCD), .PCPlus4D(PCPlus4D), .alu_srcAD(alu_srcAD), .alu_srcBD(alu_srcBD), .j_typeD(j_typeD), .b_typeD(b_typeD), .i_typeD(i_typeD), .regWriteD(regWriteD), .memRDEN2D(memRDEN2D), .memWE2D(memWE2D), .alu_funD(alu_funD),
       .rs1D(rs1D), .rs2D(rs2D), .InstrD(InstrD),
      //outputs
-     .rf_waE(rf_waE), .InstrE(InstrE),
+     .rf_waE(rf_waE), .rf_wr_selE(rf_wr_selE), .InstrE(InstrE),
      .PCE(PCE), .PCPlus4E(PCPlus4E), .alu_srcAE(alu_srcAE), .alu_srcBE(alu_srcBE), .j_typeE(j_typeE), .b_typeE(b_typeE), .i_typeE(i_typeE), .regWriteE(regWriteE), .memRDEN2E(memRDEN2E), .memWE2E(memWE2E), .alu_funE(alu_funE), .rs1E(rs1E), .rs2E(rs2E)
      );
      
@@ -217,6 +217,8 @@ module OTTER_MCU(input CLK,
     .rs1(rs1D), .jalr(jalr), .jal(jal), .branch(branch));
     
      BRANCH_COND_GEN branch_cond_gen(.a(rs1E), .b(rs2E), .br_eq(br_eq), .br_lt(br_lt), .br_ltu(br_ltu));
+     
+     PC_SRC_CONTROL pc_src_control(.br_eq(br_eq), .br_lt(br_lt), .br_ltu(br_ltu), .InstrE(InstrE), .pcSource(pcSource)); 
      
      // Creates a RISC-V ALU
      ALU alu(.srcA(alu_srcAE), .srcB(alu_srcBE), .alu_fun(alu_funE), .result(alu_resE));
