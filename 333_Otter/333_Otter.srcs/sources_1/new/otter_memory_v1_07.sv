@@ -70,7 +70,7 @@
     (* ram_decomp = "power" *) logic [31:0] memory [0:16383];
     
     initial begin
-        $readmemh("i_tests.mem", memory, 0, 16383);
+        $readmemh("pipe_lab_test.mem", memory, 0, 16383);
     end
     
     assign wordAddr2 = MEM_ADDR2[15:2];

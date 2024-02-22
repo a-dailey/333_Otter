@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,094,995 ps"></ZoomStartTime>
-      <ZoomEndTime time="1,095,027 ps"></ZoomEndTime>
-      <Cursor1Time time="1,095,000 ps"></Cursor1Time>
+      <ZoomStartTime time="114,990 ps"></ZoomStartTime>
+      <ZoomEndTime time="115,051 ps"></ZoomEndTime>
+      <Cursor1Time time="115,000 ps"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="123"></NameColumnWidth>
+      <NameColumnWidth column_width="107"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="28" />
    <wvobject fp_name="/pipeline_tb/UUT/programcontrol/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -88,5 +88,53 @@
    <wvobject fp_name="/pipeline_tb/UUT/reg_file/t0" type="array">
       <obj_property name="ElementShortName">t0[31:0]</obj_property>
       <obj_property name="ObjectShortName">t0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/mem/MEM_ADDR2" type="array">
+      <obj_property name="ElementShortName">MEM_ADDR2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_ADDR2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/mem/MEM_DIN2" type="array">
+      <obj_property name="ElementShortName">MEM_DIN2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_DIN2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/mem/MEM_WE2" type="logic">
+      <obj_property name="ElementShortName">MEM_WE2</obj_property>
+      <obj_property name="ObjectShortName">MEM_WE2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/mem/MEM_RDEN2" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">MEM_RDEN2</obj_property>
+      <obj_property name="ObjectShortName">MEM_RDEN2</obj_property>
+      <obj_property name="label">rden2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/mem/MEM_DOUT2" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">MEM_DOUT2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_DOUT2[31:0]</obj_property>
+      <obj_property name="label">dout2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/mem/wordAddr2" type="array">
+      <obj_property name="ElementShortName">wordAddr2[13:0]</obj_property>
+      <obj_property name="ObjectShortName">wordAddr2[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/s0" type="array">
+      <obj_property name="ElementShortName">s0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/s1" type="array">
+      <obj_property name="ElementShortName">s1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/s2" type="array">
+      <obj_property name="ElementShortName">s2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/s3" type="array">
+      <obj_property name="ElementShortName">s3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipeline_tb/UUT/reg_file/s4" type="array">
+      <obj_property name="ElementShortName">s4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s4[31:0]</obj_property>
    </wvobject>
 </wave_config>

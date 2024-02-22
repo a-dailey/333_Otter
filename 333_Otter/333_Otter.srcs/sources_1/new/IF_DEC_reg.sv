@@ -1,23 +1,25 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company: CAl Poly
+// Engineer: Austin Dailey
+//
 // Create Date: 02/06/2024 02:24:29 PM
-// Design Name: 
+// Design Name:
 // Module Name: IF_DEC_reg
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 module IF_DEC_reg(
@@ -25,10 +27,11 @@ module IF_DEC_reg(
     input logic [31:0] IR, PCF, PCPlus4F,
     output logic [31:0] PCD, InstrD, PCPlus4D
 
+
     );
-    
+   
     always_ff @(posedge CLK) begin
-    
+   
         if (RESET) begin
             PCD <= 32'b0;
             PCPlus4D <= 32'b0;
@@ -40,5 +43,5 @@ module IF_DEC_reg(
             InstrD <= IR;
         end
     end
-        
+       
 endmodule
